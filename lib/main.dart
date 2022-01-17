@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todo_list/pages/bottom_ex.dart';
 import 'package:flutter_todo_list/pages/demo.dart';
 import 'package:flutter_todo_list/pages/home.dart';
+import 'package:flutter_todo_list/pages/splash_screen.dart';
+import 'package:flutter_todo_list/pages/stack_ex.dart';
+
+import 'pages/dialog_ex.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Demo(),
+      home: BottomEx(),
     );
   }
 }
