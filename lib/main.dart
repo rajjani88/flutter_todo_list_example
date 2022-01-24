@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_todo_list/pages/bottom_ex.dart';
 import 'package:flutter_todo_list/pages/demo.dart';
 import 'package:flutter_todo_list/pages/home.dart';
+import 'package:flutter_todo_list/pages/search_ex.dart';
+import 'package:flutter_todo_list/pages/shared_pref.dart';
 import 'package:flutter_todo_list/pages/splash_screen.dart';
 import 'package:flutter_todo_list/pages/stack_ex.dart';
 
@@ -18,11 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BottomEx(),
+      home: SharedPref(),
     );
   }
 }
